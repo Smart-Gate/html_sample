@@ -12,22 +12,21 @@
    
     <p>He is my function Lesson</p>
     <input type="" placeholder="Enter Your Name" id="name" value="">
-    <button onclick="clicker()"> Click me to see the function</button>
-    <button onclick="sayHello()">Say Hello To user</button>
+    <button onclick="chatter()">Chat</button>
    
     <p id="result"></p>
     <p id="Hello"></p>
 </body>
 <script>
-    function clicker()
+    
+    function chatter()
     {
-      document.getElementById('result').innerHTML = "Clicker function is working";  
-    }
-    function sayHello()
-    {
-        if(document.getElementById('name').value =="Yousef")
+        if(document.getElementById('name').value =="what is your name?" ||
+         document.getElementById('name').value =="what is your name" ||
+          document.getElementById('name').value =="what is your name ?"
+          || document.getElementById('name').value =="What is your name" )
         {
-            document.getElementById('Hello').innerHTML = "Hello teacher" 
+            document.getElementById('Hello').innerHTML = "my name is yousef" 
         }
         else if(document.getElementById('name').value =="How are You")
         {
@@ -35,7 +34,7 @@
         }
         else
         {
-            document.getElementById('Hello').innerHTML = "Hello" + document.getElementById('name').value 
+            document.getElementById('Hello').innerHTML = "I did not understand you" 
         }
         
     }
